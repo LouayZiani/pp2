@@ -1,5 +1,3 @@
-# Task 3: 
-
 movies = [
 {
 "name": "Usual Suspects", 
@@ -78,17 +76,20 @@ movies = [
 }
 ]
 
-             
-def Category(category): 
-    found_movies = False
-    
-    for film in movies: 
-        if film["category"] == category: 
-            print(film["name"])
-            found_movies = True
-    if not found_movies:
-        print("No movies found in the specified category.")
+# Write a function that takes a category name and returns just those movies under that category.
 
-category_name = input("Enter a category: ")
+def movies_category(lst):
+    category = input("Enter category: ")
+    movie_found = False
+    for movie in lst:
+        if movie["category"] == category:
+            print(movie["name"])
+            movie_found = True
+    if not movie_found:
+        print("Unavailable category")
+        
+movies_category(movies)
 
-Category(category_name)
+            
+
+
