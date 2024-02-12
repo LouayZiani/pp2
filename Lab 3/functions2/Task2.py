@@ -76,10 +76,9 @@ movies = [
 }
 ]
 
-def imdbbigger5_5(movie_list):
-    return [movie for movie in movies if movie["imdb"] > 5.5]
-
-new_score = imdbbigger5_5(movies)
-
-for movie in new_score:
-    print(movie["name"])
+# Write a function that returns a sublist of movies with an IMDB score above 5.5.
+def good_movies(lst):
+    for movie in lst:
+        if movie["imdb"] > 5.5:
+            print(movie["name"])
+good_movies(movies)
