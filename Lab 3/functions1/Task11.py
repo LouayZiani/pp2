@@ -1,10 +1,11 @@
 # Task 11:
 
-def palindrome(str):
-    if str==str[-1::-1]:
+# Write a Python function that checks whether a word or phrase is palindrome or not
+
+def is_palindrome(string):
+    if string == string[-1::-1]:
         return True
     return False
-    
-x = input()
-answer = palindrome(x)
-print(answer)
+
+text = input("Enter a string: ")
+print(is_palindrome(text))
