@@ -1,13 +1,14 @@
 # Task 1:
 
-class Strings:
-    def getString(word):
-        word.w = input()
-    
-    def printString(word):
-        print(word.w.upper())
+# Define a class which has at least two methods: getString: to get a string 
+# from console input printString: to print the string in upper case.
+
+class getString:
+    def __init__(self, string):
+        self.string = string
 
 
-new_word = Strings()
-new_word.getString()
-new_word.printString()
+string1 = getString(input("Enter string: "))
+
+result = string1.string.upper()
+print("Your string in Upper case:", result)
