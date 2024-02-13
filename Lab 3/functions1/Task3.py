@@ -1,7 +1,7 @@
 # Task 3:
 
 def solve(number_heads, number_legs):
-    for chicken in range(number_heads+1):
+    for chicken in range(number_heads):
         rabbit = number_heads-chicken
         if 2*chicken + 4*rabbit == number_legs:
             return chicken, rabbit
