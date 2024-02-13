@@ -15,7 +15,7 @@ class Account:
         else:
             print("Insufficient funds")
 
-account = Account(input("The owner is: "), abs(float(input("Balance:"))))
+account = Account(input("The owner is: "), int(input("Your balance is: "))))
 
-account.deposit(float(input("Amount to deposit: ")))
-account.withdraw(float(input("Amount to withdraw:")))
+account.deposit(int(input("Amount to deposit: ")))
+account.withdraw(int(input("Amount to withdraw:")))
